@@ -1,0 +1,23 @@
+{
+  "name": "codesnap-js-v4",
+  "version": "4.0.0",
+  "description": "A local-first developer knowledge workspace for snippets, notes, collections, playgrounds, search, and offline backups.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "check": "node scripts/check-syntax.js",
+    "test": "node tests/run-tests.js"
+  },
+  "keywords": [
+    "javascript",
+    "snippet-manager",
+    "pwa",
+    "indexeddb",
+    "developer-tools",
+    "productivity"
+  ],
+  "author": "Yadhuvanshi",
+  "license": "MIT",
+  "devDependencies": {}
+}
