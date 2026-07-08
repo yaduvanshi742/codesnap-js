@@ -1,0 +1,24 @@
+.app-shell { display: grid; grid-template-columns: 290px minmax(0, 1fr); min-height: 100vh; }
+.sidebar { position: sticky; top: 0; height: 100vh; overflow: auto; border-right: 1px solid var(--border); background: color-mix(in srgb, var(--panel) 92%, transparent); padding: 1.2rem; }
+.brand { display: flex; gap: .8rem; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.brand__mark { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 15px; background: linear-gradient(135deg, var(--primary), #34d399); color: white; font-weight: 900; }
+.brand h1 { margin: 0; font-size: 1.25rem; }
+.brand p { margin: .1rem 0 0; color: var(--muted); font-size: .86rem; }
+.nav { display: grid; gap: .45rem; margin: 1.2rem 0; }
+.nav__item { text-align: left; border: 1px solid transparent; background: transparent; color: var(--muted); padding: .78rem .9rem; border-radius: 13px; transition: .2s ease; }
+.nav__item:hover, .nav__item.is-active { background: var(--panel-2); color: var(--text); border-color: var(--border); }
+.sidebar__section { margin-top: 1.15rem; }
+.section-title { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; margin-bottom: .65rem; }
+.folder-list { display: grid; gap: .42rem; }
+.workspace { min-width: 0; padding: 1.2rem clamp(1rem, 2vw, 2rem) 2rem; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.topbar h2 { margin: .1rem 0 0; font-size: clamp(1.6rem, 3vw, 2.35rem); }
+.eyebrow { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; margin: 0; }
+.topbar__actions { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; justify-content: flex-end; }
+.view { display: none; animation: viewIn .22s ease; }
+.view.is-visible { display: block; }
+.grid { display: grid; gap: 1rem; }
+.grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@keyframes viewIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
